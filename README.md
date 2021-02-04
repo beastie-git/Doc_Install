@@ -39,9 +39,6 @@ method.insert = cfg.watch,    private|const|string, (cat,(cfg.basedir),"torrent/
 #    "\"",(cfg.watch),"/load\" ",\
 #    "\"",(cfg.watch),"/start\" ")
 ...
-## Changer la range de ports
-network.port_range.set = 50000-50100
-...
 ## Maxer l'utilisation de la ram
 pieces.memory.max.set = 1000M
 ...
