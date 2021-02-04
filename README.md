@@ -202,6 +202,13 @@ protocol.pex.set = yes
 # DTH use udp by default
 trackers.use_udp.set = yes
 ```
+Pour avoir le pays des peers, il faut installer GeoIP :
+
+```
+aptitude install php-geoip geoip-database
+systemctl restart apache2.service
+systemctl restart php7.3-fpm.service
+```
 
 ## Iptables :
 
