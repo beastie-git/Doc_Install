@@ -167,9 +167,9 @@ systemctl restart php7.3-fpm.service
 ## Iptables :
 ```
 iptables -A INPUT -i enp1s0 -p tcp --dport 50000 -j ACCEPT
+iptables -A INPUT -i enp1s0 -p udp --dport 6881 -j ACCEPT
 ip6tables -A INPUT -i enp1s0 -p tcp --dport 50000 -j ACCEPT
 ip6tables -A INPUT -i enp1s0 -p udp --dport 6881 -j ACCEPT
-iptables -A INPUT -i enp1s0 -p udp --dport 6881 -j ACCEPT
 ```
 ## Resources :
 https://terminal28.com/how-to-install-and-configure-rutorrent-rtorrent-debian-9-stretch/
